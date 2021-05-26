@@ -24,7 +24,7 @@ body {
 .heading__logo { display:none; }
 
 .content {
-  height:100vh;
+  height:100%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -45,4 +45,55 @@ body {
   display:flex;
   flex-direction: column;
   text-align: center;
+}
+.hero__logo {
+  width:40%;
+  padding:1rem;
+}
+.heading__header {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin:0;
+  margin-top: 3rem;
+  color:var(--neutral-dark-grayish-red);
+}
+.heading__header strong {
+  color:var(--primary-desasturated-red);
+  font-weight:300;
+}
+.heading__txt {
+  color:var(--primary-desasturated-red);
+  padding:0 1rem;
+  margin-bottom: 2rem;
+}
+
+.heading__input {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  margin:auto;
+  margin-bottom: 2rem;
+  position:relative;
+}
+.input__email {
+  border-radius: 1rem 2rem 2rem 1rem;
+  width:100%;
+  padding:1rem 0;
+  border:1px solid var(--primary-desasturated-red);
+}
+.input__btn {
+  padding:1rem 2.1rem;
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-image: url('images/icon-arrow.svg'),var(--gradient-thwo);
+  background-position:30px 12px,100%;
+  border:none;
+  position: absolute;
+  right:0rem;
+}
+.input__email::placeholder {
+  color:var(--primary-desasturated-red);
+  padding:1rem;
 }
