@@ -8,7 +8,7 @@ html {
   --primary-desasturated-red:hsl(0,36%,70%);
   --primary-soft-red:hsl(0, 93%, 68%);
   --neutral-dark-grayish-red:hsl(0, 6%, 24%);
-  --gradient-one:linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient-one:linear-gradient(135deg,hsl(0, 0%, 90%), hsl(0, 100%, 98%));
   --gradient-thwo:linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
 }
 
@@ -28,9 +28,10 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
+  background-image:var(--gradient-one);
 }
 .container {
-  border:2px solid black;
+  background:white;
   max-width:375px;
   display:flex;
   flex-direction: column;
@@ -78,17 +79,17 @@ body {
   position:relative;
 }
 .input__email {
-  border-radius: 1rem 2rem 2rem 1rem;
+  border-radius: 3rem;
   width:100%;
   padding:1rem 0;
   border:1px solid var(--primary-desasturated-red);
 }
 .input__btn {
-  padding:1rem 2.1rem;
+  padding:1rem 2.5rem;
   border-radius: 2rem;
   background-repeat: no-repeat;
   background-image: url('images/icon-arrow.svg'),var(--gradient-thwo);
-  background-position:30px 12px,100%;
+  background-position:35px 12px,100%;
   border:none;
   position: absolute;
   right:0rem;
@@ -96,4 +97,46 @@ body {
 .input__email::placeholder {
   color:var(--primary-desasturated-red);
   padding:1rem;
+}
+
+@media only screen and (min-width:700px) {
+  .hero__img_desktop { display:block;}
+  .heading__logo { display:block; width:25%; padding:0; margin-top:2rem;}
+  .hero__img_mobile { display:none;}
+  .hero__logo { display:none;}
+  .content {height:100vh; }
+  .container { 
+    max-width: 100%;
+    flex-direction: row-reverse;
+    margin:10% 15%;
+    box-shadow:0px 1.5rem 2rem 0px lightgray;
+  }
+  .hero { width:40%}
+  .heading { 
+    width:60%;
+    margin-left:5rem;
+    margin-right:7rem;
+    text-align:left;
+  }
+  .heading__header {
+    margin:0;
+    margin-top:5rem;
+    margin-bottom:1rem;
+    font-size:2.8rem;
+  }
+  .heading__txt {
+    margin:0;
+    padding:0;
+    font-size:1rem;
+    line-height:1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .heading__input {
+    margin:0;
+    width:100%;
+  }
+  .hero__img_desktop {
+    height:100%;
+    object-fit: cover;
+  }
 }
