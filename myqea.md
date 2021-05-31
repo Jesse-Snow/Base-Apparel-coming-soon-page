@@ -7,3 +7,9 @@
   - The 'logo div' in the right side will be visible only in mobile and vice-versa.
   - The left side will have 60% of widht in the flex container.
   - I can try mobile first
+
+## How i can validate the form using only JS?
+
+- I Can use:
+  - Regular expression validation
+  - Forms API

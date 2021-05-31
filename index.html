@@ -32,16 +32,23 @@
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
 
-        <form class="heading__input">
-          <input placeholder="Email Address" class="input__email"type="email" name="email" id="email">
-          <input type="submit" class="input__btn" value="">
-        </form>
+        <div>
+          <form class="heading__input" id="form">
+            <input id="email" placeholder="Email Address" class="input__email"type="email" name="email" id="email">
+            <input id="submit" type="button" class="input__btn" value="">
+            <img class="error_img" id="errorImg"src="images/icon-error.svg" alt="Submit Error">
+          </form>
+          <span id="error" class="error">Please provide a valid email</span>
+        </div>
+          
 
       </header>
 
     </div>
 
   </div>
+
+  <script src="main.js"></script>
   <!-- 
   <footer>
     <p class="attribution">
